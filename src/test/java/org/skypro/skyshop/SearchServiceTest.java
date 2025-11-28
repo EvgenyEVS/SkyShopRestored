@@ -32,10 +32,6 @@ public class SearchServiceTest {
     @InjectMocks
     private SearchService searchService;
 
-    @BeforeEach
-    void setUp() {
-        searchService = new SearchService(storageService);
-    }
 
     @Test
     void whenSearchResultListIsEmpty_thenResultSearchListIsEmpty() {
