@@ -95,7 +95,7 @@ public class BasketServiceTest {
 
         // then
         assertNotNull(result);
-        assertEquals(1, result.getBasketItemList());
+        assertEquals(1, result.getBasketItemList().size());
 
         BasketItem basketItem = result.getBasketItemList().get(0);
         assertEquals(keyboard, basketItem.getProduct());
